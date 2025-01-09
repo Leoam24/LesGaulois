@@ -13,6 +13,7 @@ public class Gaulois {
 		return nom;
 	}
 
-	
-
+	public void parler(String texte) {
+		System.out.println("Le gaulois " + nom + ": «" + texte + "».");
+		}
 }
