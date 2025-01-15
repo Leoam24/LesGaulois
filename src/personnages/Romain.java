@@ -1,6 +1,30 @@
 package personnages;
 
-public class Romain {
+public class Romain extends Personnage{
+	
+	
+	public Romain(String nom, int force) {
+		super(nom, force);
+		}
+	
+	@Override 
+	protected String donnerAuteur() {
+		return "Le Romain ";
+		
+	}
+	
+	
+	
+	
+	
+	
+}	
+	
+	
+	
+	
+/*	
+	
 	private String nom;
 	private int force;
 	
@@ -29,3 +53,4 @@ public class Romain {
 	}
 
 }
+*/
