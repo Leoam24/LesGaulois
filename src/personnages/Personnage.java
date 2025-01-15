@@ -22,13 +22,16 @@ public abstract class Personnage {
 
 	public void frapper(Personnage adversaire) {
 		//System.out.println(donnerAuteur() + " envoie un grand coup dans la mâchoire de " + adversaire.getNom());
+		System.out.println("Le"+ donnerAuteur() + getNom() + " donne un grand coup au" + adversaire.donnerAuteur() + adversaire.getNom()+".");
+		
+		
 		adversaire.recevoirCoup(force/3);
 		}
 		
 	public void recevoirCoup(int forceCoup) {
 		if(forceCoup >= force) {
 			this.force = 0;
-			parler("J'abandonne");
+			parler("J'abandonne...");
 		}
 		else {
 			this.force = force - forceCoup;

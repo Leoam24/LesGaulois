@@ -28,10 +28,13 @@ public class TestGaulois {
 			minus.recevoirCoup(3);
 		}
 	*/
-		for(int i=0;i<3;i++) {
-			asterix.frapper(minus);
-		}
+		// debut combat
 		
+		asterix.frapper(minus);
+		minus.frapper(asterix);
+		asterix.frapper(minus);
+		minus.frapper(asterix);
+		asterix.frapper(minus);
 	}
 	
 }
