@@ -1,4 +1,5 @@
 package sites;
+import personnages.Grade;
 import personnages.Soldat;
 
 public class Camp {
@@ -39,5 +40,16 @@ public class Camp {
 		
 	}
 	
+	public void changerCommandant(Soldat newCommandant) {
+		
+		if(newCommandant.getGrade().equals(Grade.CENTURION)) {
+			commandant = newCommandant;
+			newCommandant.parler("Moi Chorus je prends la direction du camp romain.");
+		}
+		else {
+			newCommandant.parler("Je ne suis pas suffisamment gradé pour prendre la direction du camp romain");
+		}
+	
+	}
 	
 }
