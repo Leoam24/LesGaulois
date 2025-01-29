@@ -3,6 +3,7 @@ package test_fonctionnel;
 import personnages.Gaulois;
 import personnages.Romain;
 import personnages.Personnage;
+import personnages.Druide;
 
 public class TestGaulois {
 /*
@@ -15,7 +16,7 @@ public class TestGaulois {
 	}
 	
 */
-	public static void main(String[] args) {
+	public static void mainB(String[] args) {
 		Gaulois asterix = new Gaulois("Asterix", 8);
 		asterix.parler("Bonjour à tous");
 		
@@ -37,5 +38,15 @@ public class TestGaulois {
 		asterix.frapper(minus);
 	}
 	
+	public static void main(String[] args) {
+		Druide panoramix = new Druide("Panoramix" , 3);
+		
+		
+		
+	}
+
+
+
+
 }
 
