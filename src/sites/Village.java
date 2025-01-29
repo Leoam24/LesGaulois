@@ -28,7 +28,19 @@ public class Village {
 		}
 		
 	}
-
-
-
+	
+	public void afficherVillage() {
+		System.out.println("\nLe village dirigé par " + chef.getNom() + " est habité par :\n");
+		
+		for(int i=1; i<nbVillageois ;i++) {
+			System.out.println(villageois[i].getNom());
+			
+		}
+		
+	}
+	
+	
 }
+
+
+

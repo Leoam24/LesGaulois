@@ -3,7 +3,7 @@ import personnages.Soldat;
 
 public class Camp {
 	private Soldat commandant;
-	private int nbPersonneMax = 4;
+	private int nbPersonneMax = 80;
 	private Soldat[] soldats = new Soldat[nbPersonneMax];
 	private int nbSoldats;
 	
@@ -28,5 +28,16 @@ public class Camp {
 		}
 		
 	}
+	
+	public void afficherCamp() {
+		System.out.println("\nLe camp dirigé par " + commandant.getNom() + " est habité par :\n");
+		
+		for(int i=1; i<nbSoldats ;i++) {
+			System.out.println(soldats[i].getNom());
+			
+		}
+		
+	}
+	
 	
 }

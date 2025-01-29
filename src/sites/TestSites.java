@@ -36,6 +36,12 @@ public class TestSites {
 		village.ajouterVillageois(obelix,vercingétorix);
 		Gaulois prolix = new Gaulois("Prolix",2);
 		village.ajouterVillageois(prolix,vercingétorix);
-	}
 	
+		
+		camp.afficherCamp();
+		
+		village.afficherVillage();
+	
+	
+	}
 }
